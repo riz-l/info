@@ -9,6 +9,7 @@ html {
   color: #eee !important;
   font-family: "Roboto", sans-serif;
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -275,16 +276,16 @@ li {
   transition: color 650ms;
 }
 
-.fa-facebook-square:hover {
-  color: #4267b2;
+.fa-github-square:hover {
+  color: #bd2c00;
 }
 
 .fa-twitter-square:hover {
   color: #38a1f3;
 }
 
-.fa-dribbble-square:hover {
-  color: #ea4c89;
+.fa-linkedin:hover {
+  color: #0e76a8;
 }
 /*#endregion End about */
 
@@ -635,6 +636,7 @@ input[type="submit"]:hover {
 
   .about-details {
     order: 2;
+    text-align: center;
   }
 
   .profile-img {
