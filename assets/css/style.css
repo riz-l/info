@@ -713,15 +713,15 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 462px) {
   .timeline h4 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .timeline p {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 
   .timeline .date::before {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 /*#endregion End media queries */
