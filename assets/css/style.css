@@ -19,6 +19,7 @@ body {
   color: #eee;
   height: 100%;
   overflow-x: hidden;
+  overflow-y: scroll;
   width: 100%;
 }
 
@@ -672,6 +673,20 @@ input[type="submit"]:hover {
 
   .up {
     right: 2rem;
+  }
+}
+
+@media screen and (max-width: 462px) {
+  .timeline h4 {
+    font-size: 2rem;
+  }
+
+  .timeline p {
+    font-size: 1.4rem;
+  }
+
+  .timeline .date::before {
+    font-size: 1.4rem;
   }
 }
 /*#endregion End media queries */
