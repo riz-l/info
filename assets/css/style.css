@@ -264,6 +264,12 @@ li {
   margin-right: 5rem;
 }
 
+.profile-img img {
+  border-radius: 1%;
+  -webkit-filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.3));
+}
+
 .about-details {
   flex: 1;
 }
@@ -275,6 +281,8 @@ li {
 .social-media i {
   font-size: 5rem;
   transition: color 650ms;
+  -webkit-filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.2));
 }
 
 .fa-github-square:hover {
@@ -321,6 +329,8 @@ li {
   margin-bottom: 2rem;
   display: flex;
   transform: rotate(45deg);
+  -webkit-filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.2));
 }
 
 .icon-container i {
@@ -345,6 +355,17 @@ li {
 
 .portfolio-img {
   flex: 1;
+}
+
+.portfolio-img.animated {
+  animation: filter-animation 5s infinite;
+  -webkit-animation: filter-animation 5s infinite;
+}
+
+.portfolio-img img {
+  border-radius: 1%;
+  -webkit-filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.3));
 }
 
 .portfolio-description {
@@ -528,6 +549,20 @@ input[type="submit"]:hover {
 
   100% {
     box-shadow: 0 0 0 0 rgba(253, 86, 191, 0);
+  }
+}
+
+@keyframes filter-animation {
+  0% {
+    -webkit-filter: sepia(0) saturate(2);
+  }
+
+  50% {
+    -webkit-filter: sepia(1) saturate(8);
+  }
+
+  100% {
+    -webkit-filter: sepia(0) saturate(2);
   }
 }
 /*#endregion End animations */
