@@ -50,6 +50,7 @@ h6 {
 img {
   width: 100%;
 }
+
 /*#endregion End global */
 
 /*#region Start reusable */
@@ -79,7 +80,8 @@ img {
 .section-heading h2::after {
   content: "";
   position: absolute;
-  bottom: -0.5rem;
+  margin-bottom: 1.5rem;
+  bottom: -2.5rem;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0.75);
@@ -92,6 +94,7 @@ img {
 }
 
 .section-heading h6 {
+  margin-top: 2rem;
   font-size: 1.6rem;
   font-weight: 300;
 }
@@ -99,6 +102,7 @@ img {
 .has-margin-right {
   margin-right: 5rem;
 }
+
 /*#endregion End reusable */
 
 /*#region Start header */
@@ -225,6 +229,7 @@ li {
   font-size: 2rem;
   font-weight: 300;
 }
+
 /*#endregion End header */
 
 /*#region Start about */
@@ -288,6 +293,7 @@ li {
 .fa-linkedin:hover {
   color: #0e76a8;
 }
+
 /*#endregion End about */
 
 /*#region Start services */
@@ -331,6 +337,7 @@ li {
   margin: auto;
   transform: rotate(-45deg);
 }
+
 /*#endregion End services */
 
 /*#region Start portfolio */
@@ -390,6 +397,7 @@ li {
 .portfolio-description .cta:hover {
   color: #0f9f86 !important;
 }
+
 /*#endregion End portfolio */
 
 /*#region Start experience */
@@ -452,6 +460,7 @@ li {
   width: 1.5rem;
   background-color: #17161e;
 }
+
 /*#endregion End experience */
 
 /*#region Start contact */
@@ -481,8 +490,47 @@ textarea {
   outline-color: #17f9d1;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #efefef;
+  border-radius: 3px;
+  font-size: 1em;
+}
+
 .form-input {
   margin-bottom: 2rem !important;
+}
+
+.service-container {
+  /* Dropdown select test */
+  position: relative;
+  display: inline;
+}
+
+.service-container:after {
+  /* Dropdown select test */
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.service-container:after {
+  /* Dropdown select test */
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  top: 0.3em;
+  right: 0.75em;
+  border-top: 8px solid transparent;
+  opacity: 0.5;
+}
+
+select::-ms-expand {
+  /* Dropdown select test */
+  display: none;
 }
 
 input[type="submit"] {
@@ -543,6 +591,7 @@ input[type="submit"]:hover {
 .copyright p {
   font-size: 1.4rem;
 }
+
 /*#endregion End footer */
 
 /*#region Start animations */
@@ -559,163 +608,7 @@ input[type="submit"]:hover {
     box-shadow: 0 0 0 0 rgba(23, 249, 209, 0);
   }
 }
+
 /*#endregion End animations */
 
 /*#region Start media queries */
-@media screen and (max-width: 1228px) {
-  .nav-list {
-    flex-direction: column;
-  }
-
-  li {
-    margin: 2rem 0;
-  }
-
-  .nav-link {
-    font-size: 4.5rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    background-color: #17161e !important;
-    /*background: url("../images/background-web.jpg") no-repeat center fixed;*/
-    background-size: cover;
-    color: #eee;
-  }
-
-  .landing-text h1 {
-    font-size: 15rem;
-  }
-
-  .landing-text h6 {
-    font-size: 1.7rem;
-  }
-
-  .nav-list {
-    flex-direction: column;
-  }
-
-  li {
-    margin: 2rem 0;
-  }
-
-  .nav-link {
-    font-size: 4.5rem;
-  }
-
-  .about-heading h2 {
-    font-size: 8rem;
-  }
-
-  .section-heading h2 {
-    font-size: 3rem;
-  }
-
-  .about-details .nav-list {
-    flex-direction: initial;
-  }
-
-  .about-details li {
-    margin: 0 2rem;
-  }
-
-  .icon-container {
-    width: 7rem;
-    height: 7rem;
-  }
-
-  .icon-container i {
-    font-size: 4rem;
-  }
-
-  .timeline ul {
-    margin: 0 0 0 auto;
-  }
-
-  .timeline .date::before {
-    left: -20rem;
-  }
-
-  .timeline .date::after {
-    left: -5.9rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .menu-toggler {
-    top: 2rem;
-    right: 2rem;
-  }
-
-  .landing-text h1 {
-    font-size: 8rem;
-  }
-
-  .landing-text h6 {
-    font-size: 1.4rem;
-  }
-
-  .nav-link {
-    font-size: 3.5rem;
-  }
-
-  .about .container {
-    flex-direction: column;
-  }
-
-  .about-details {
-    order: 2;
-    text-align: center;
-  }
-
-  .profile-img {
-    margin: 0 0 7rem 0;
-    order: 1;
-  }
-
-  .portfolio-item {
-    flex-direction: column;
-  }
-
-  .portfolio-img {
-    margin: 0 0 2rem 0;
-    order: 1;
-  }
-
-  .portfolio-description {
-    margin: 0;
-    order: 2;
-  }
-
-  .timeline p {
-    font-size: 1.6rem;
-  }
-
-  .timeline .date::before {
-    font-size: 1.4rem;
-  }
-
-  form {
-    width: 100%;
-  }
-
-  .up {
-    right: 2rem;
-  }
-}
-
-@media screen and (max-width: 462px) {
-  .timeline h4 {
-    font-size: 1.6rem;
-  }
-
-  .timeline p {
-    font-size: 1rem;
-  }
-
-  .timeline .date::before {
-    font-size: 1.2rem;
-  }
-}
-/*#endregion End media queries */
