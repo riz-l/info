@@ -310,6 +310,7 @@
         <form action="" data-aos="fade-up" data-aos-delay="100">
           <label for="name">Name:</label>
           <input
+            class="form-input"
             type="text"
             id="name"
             name="name"
@@ -318,6 +319,7 @@
           />
           <label for="email">Email:</label>
           <input
+            class="form-input"
             type="email"
             id="email"
             name="email"
@@ -325,7 +327,7 @@
             required
           />
           <label for="service">Services:</label>
-          <select name="service" id="service">
+          <select class="form-input" name="service" id="service">
             <option value="">International Relations</option>
             <option value="">Website Development</option>
             <option value="">Application Development</option>
@@ -333,7 +335,13 @@
             <option value="">Other</option>
           </select>
           <label for="subject">Subject:</label>
-          <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+          <textarea
+            class="form-input"
+            name="subject"
+            id="subject"
+            cols="10"
+            rows="10"
+          ></textarea>
           <input type="submit" value="Submit" />
         </form>
       </div>
