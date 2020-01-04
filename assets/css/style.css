@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-color: #23222f !important;
+  background-color: #17161e !important;
   /*background: url("../images/background-web.jpg") no-repeat center fixed;*/
   background-size: cover;
   color: #eee;
@@ -108,7 +108,7 @@ header {
 }
 
 .top-nav {
-  background-color: #1a1923;
+  background-color: #131319;
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 100%;
   height: 100vh;
@@ -137,14 +137,13 @@ li {
   font-size: 3rem;
   padding: 1rem;
   text-transform: uppercase;
+  transition: color 650ms;
+  color: #eee;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  background: linear-gradient(to top, #2a2939, #fd57bf);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #17f9d1 !important;
 }
 
 .top-nav.open {
@@ -171,7 +170,7 @@ li {
 }
 
 .bar {
-  background: linear-gradient(to right, #2a2939, #fd57bf);
+  background: linear-gradient(to right, #17161e, #17f9d1);
   border-radius: 0.8rem;
   height: 4px;
   width: 100%;
@@ -212,9 +211,9 @@ li {
 
 .landing-text h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 14rem;
+  font-size: 20rem;
   text-transform: uppercase;
-  background: linear-gradient(to top, #2a2939, #fd57bf);
+  background: linear-gradient(to top, #17161e, #17f9d1);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -317,8 +316,8 @@ li {
 .icon-container {
   width: 10rem;
   height: 10rem;
-  border: 3px solid #fd57bf;
-  background-color: #2a2939;
+  border: 3px solid #17f9d1;
+  background-color: #17161e;
   margin-bottom: 2rem;
   display: flex;
   transform: rotate(45deg);
@@ -327,7 +326,7 @@ li {
 }
 
 .icon-container i {
-  color: #fd57bf;
+  color: #17f9d1;
   font-size: 5rem;
   margin: auto;
   transform: rotate(-45deg);
@@ -384,18 +383,18 @@ li {
   font-size: 1.5rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: #fd57bf !important;
+  color: #17f9d1 !important;
   transition: color 650ms;
 }
 
 .portfolio-description .cta:hover {
-  color: #ea4c89 !important;
+  color: #0f9f86 !important;
 }
 /*#endregion End portfolio */
 
 /*#region Start experience */
 .timeline ul {
-  border-left: 4px solid #fd57bf;
+  border-left: 4px solid #17f9d1;
   border-radius: 0.8rem;
   background-color: rgba(0, 0, 0, 0.05);
   margin: 0 auto;
@@ -446,18 +445,18 @@ li {
 
 .timeline .date::after {
   content: "";
-  box-shadow: 0 0 0 4px #fd57bf;
+  box-shadow: 0 0 0 4px #17f9d1;
   border-radius: 100%;
   left: -8rem;
   height: 1.5rem;
   width: 1.5rem;
-  background-color: #23222f;
+  background-color: #17161e;
 }
 /*#endregion End experience */
 
 /*#region Start contact */
 .contact {
-  background-color: #23222f;
+  background-color: #17161e;
 }
 
 form {
@@ -468,6 +467,8 @@ form {
 form label {
   color: #eee;
   font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
 }
 
 input,
@@ -477,22 +478,31 @@ textarea {
   padding: 1.4rem;
   margin-top: 5px;
   border: none;
-  outline-color: #fd57bf;
+  outline-color: #17f9d1;
+}
+
+.form-input {
+  margin-bottom: 2rem !important;
 }
 
 input[type="submit"] {
   width: initial;
-  background-color: #fd57bf;
+  background-color: #23222f;
   color: #eee;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   padding: 1rem 2rem;
   border-radius: 0.8rem;
+  border: 1px solid #17161e;
   cursor: pointer;
-  transition: background-color 650ms;
+  transition: background-color 800ms, border 800ms;
 }
 
 input[type="submit"]:hover {
-  color: #fd57bf;
-  background-color: #2a2939;
+  color: #17f9d1;
+  background-color: #17161e;
+  border: 1px solid #17f9d1;
 }
 
 /*#endregion End contact */
@@ -501,7 +511,7 @@ input[type="submit"]:hover {
 .copyright {
   width: 100%;
   text-align: center;
-  background-color: #23222f;
+  background-color: #17161e;
   padding: 2rem 0;
   position: relative;
 }
@@ -517,10 +527,15 @@ input[type="submit"]:hover {
   border-radius: 100%;
   display: flex;
   animation: pulse 2s infinite;
+  transition: background-color 650ms;
+}
+
+.up:hover {
+  background-color: #17161e;
 }
 
 .up i {
-  color: #fd57bf;
+  color: #17f9d1;
   font-size: 2rem;
   margin: auto;
 }
@@ -533,29 +548,15 @@ input[type="submit"]:hover {
 /*#region Start animations */
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(253, 86, 191, 0.99);
+    box-shadow: 0 0 0 0 rgba(23, 249, 209, 0.99);
   }
 
   70% {
-    box-shadow: 0 0 0 2rem rgba(253, 86, 191, 0);
+    box-shadow: 0 0 0 2rem rgba(23, 249, 209, 0);
   }
 
   100% {
-    box-shadow: 0 0 0 0 rgba(253, 86, 191, 0);
-  }
-}
-
-@keyframes filter-animation {
-  0% {
-    -webkit-filter: sepia(0) saturate(2);
-  }
-
-  50% {
-    -webkit-filter: sepia(1) saturate(8);
-  }
-
-  100% {
-    -webkit-filter: sepia(0) saturate(2);
+    box-shadow: 0 0 0 0 rgba(23, 249, 209, 0);
   }
 }
 /*#endregion End animations */
@@ -577,7 +578,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 768px) {
   body {
-    background-color: #23222f !important;
+    background-color: #17161e !important;
     /*background: url("../images/background-web.jpg") no-repeat center fixed;*/
     background-size: cover;
     color: #eee;
