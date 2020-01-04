@@ -318,12 +318,12 @@ li {
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 2.5rem;
   text-align: center;
+  justify-content: top;
 }
 
 .skill {
   display: flex;
   flex-direction: column;
-  justify-content: top;
   align-items: center;
   padding: 2rem;
 }
