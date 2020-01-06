@@ -14,7 +14,7 @@ html {
 
 body {
   background-color: #17161e !important;
-  /*background: url("../images/background-1.jpg") no-repeat center fixed;*/
+  background: url("../images/wallpaper.png") no-repeat center fixed;
   background-size: cover;
   color: #eee;
   height: 100%;
@@ -394,7 +394,8 @@ blockquote p {
 
 /*#region Start portfolio */
 .portfolio {
-  background-color: #17161e;
+  /*background-color: #17161e;*/
+  background: transparent;
 }
 
 .portfolio-item {
@@ -533,7 +534,8 @@ blockquote p {
 
 /*#region Start contact */
 .contact {
-  background-color: #17161e;
+  /*background-color: #17161e;*/
+  background: transparent;
 }
 
 form {
