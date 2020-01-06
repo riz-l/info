@@ -12,6 +12,8 @@
 
     <!-- Personal Styling -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Debug -->
+    <link rel="stylesheet" href="assets/css/-debug.css" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!-- Google Fonts -->
@@ -58,10 +60,12 @@
       <!--#region Main Text -->
       <div class="landing-text">
         <h1>Riz Layton</h1>
-        <h6>
-          International Relations, Web &amp; App Development, Defence &amp;
-          Policy
-        </h6>
+        <div class="heading-flavour">
+          <h6>
+            International Relations, Web &amp; App Development, Defence &amp;
+            Policy
+          </h6>
+        </div>
       </div>
       <!--#endregion-->
     </header>
@@ -69,7 +73,11 @@
     <!--#region About -->
     <section class="about" id="about">
       <div class="container">
-        <div class="profile-img" data-aos="fade-right" data-aos-delay="100">
+        <div
+          class="profile-img img-gradient"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
           <img src="assets/images/self.jpg" alt="A photograph of Riz" />
         </div>
         <div class="about-details" data-aos="fade-left" data-aos-delay="200">
@@ -94,7 +102,11 @@
           <div class="social-media">
             <ul class="nav-list">
               <li>
-                <a href="#" class="icon-link">
+                <a
+                  href="https://github.com/riz-l"
+                  class="icon-link"
+                  target="_blank"
+                >
                   <i class="fab fa-github-square"></i>
                 </a>
               </li>
@@ -175,13 +187,17 @@
           <h2>Portfolio</h2>
           <h6>View some of my recent work</h6>
         </div>
+        <!-- TDI -->
         <div class="portfolio-item">
           <div
-            class="portfolio-img has-margin-right"
+            class="portfolio-img has-margin-right img-gradient"
             data-aos="fade-right"
             data-aos-delay="100"
           >
-            <img src="assets/images/expanse.jpg" alt="Example work 1" />
+            <img
+              src="assets/images/portfolio-images/tdi.jpg"
+              alt="Example work 1"
+            />
           </div>
           <div
             class="portfolio-description"
@@ -200,9 +216,10 @@
               consequuntur, omnis velit cum odit blanditiis illo iure
               necessitatibus iste!
             </p>
-            <a href="#" class="cta"> View Details</a>
+            <a href="portfolio-posts/tdi.html" class="cta">View Details</a>
           </div>
         </div>
+        <!-- Personal Website -->
         <div class="portfolio-item">
           <div
             class="portfolio-description has-margin-right"
@@ -221,19 +238,27 @@
               consequuntur, omnis velit cum odit blanditiis illo iure
               necessitatibus iste!
             </p>
-            <a href="#" class="cta"> View Details</a>
+            <a href="#" class="cta">View Details</a>
           </div>
-          <div class="portfolio-img" data-aos="fade-left" data-aos-delay="400">
+          <div
+            class="portfolio-img img-gradient"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
             <img src="assets/images/parallax_1.jpg" alt="Example work 1" />
           </div>
         </div>
+        <!-- MA In International Relations -->
         <div class="portfolio-item">
           <div
-            class="portfolio-img has-margin-right"
+            class="portfolio-img has-margin-right img-gradient"
             data-aos="fade-right"
             data-aos-delay="500"
           >
-            <img src="assets/images/parallax_2.jpg" alt="Example work 1" />
+            <img
+              src="assets/images/portfolio-images/ma-int.jpg"
+              alt="Example work 1"
+            />
           </div>
           <div
             class="portfolio-description"
@@ -252,7 +277,7 @@
               consequuntur, omnis velit cum odit blanditiis illo iure
               necessitatibus iste!
             </p>
-            <a href="#" class="cta"> View Details</a>
+            <a href="#" class="cta">View Details</a>
           </div>
         </div>
       </div>
@@ -376,7 +401,7 @@
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"
     ></script>
-    <!-- Personal Script -->
+    <!-- Main Script -->
     <script src="assets/js/main.js"></script>
     <!-- FontAwesome -->
     <script
