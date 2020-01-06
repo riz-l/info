@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-color: #23222f !important;
+  background-color: #17161e !important;
   /*background: url("../images/background-1.jpg") no-repeat center fixed;*/
   background-size: cover;
   color: #eee;
@@ -164,7 +164,7 @@ header {
 }
 
 .top-nav {
-  background-color: #2e2c3e;
+  background-color: #1d1b26;
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 100%;
   height: 100vh;
@@ -633,7 +633,7 @@ input[type="submit"]:hover {
   position: absolute;
   width: 5rem;
   height: 5rem;
-  background-color: #2a2939;
+  background-color: #1d1b26;
   top: -2.5rem;
   right: 5rem;
   border-radius: 100%;
@@ -692,7 +692,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 768px) {
   body {
-    background-color: #23222f !important;
+    background-color: #17161e !important;
     /*background: url("../images/background-web.jpg") no-repeat center fixed;*/
     background-size: cover;
     color: #eee;
