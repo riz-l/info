@@ -692,7 +692,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 768px) {
   body {
-    background-color: #17161e !important;
+    background-color: #23222f !important;
     /*background: url("../images/background-web.jpg") no-repeat center fixed;*/
     background-size: cover;
     color: #eee;
