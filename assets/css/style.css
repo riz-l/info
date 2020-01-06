@@ -165,7 +165,7 @@ li {
   flex-direction: column;
   justify-content: space-between;
   height: 4rem;
-  position: absolute;
+  position: fixed;
   top: 5rem;
   transition: transform 650ms ease-out;
   right: 5rem;
